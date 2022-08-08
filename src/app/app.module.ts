@@ -11,6 +11,7 @@ import { HomeComponent } from './loan/home/home.component';
 import { PerComponent } from './loan/per/per.component';
 import { GoldComponent } from './loan/gold/gold.component';
 import { XYZComponent } from './loan/xyz/xyz.component';
+import { GalaryComponent } from './galary/galary.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { XYZComponent } from './loan/xyz/xyz.component';
     HomeComponent,
     PerComponent,
     GoldComponent,
-    XYZComponent
+    XYZComponent,
+    GalaryComponent
   ],
   imports: [
     BrowserModule,
