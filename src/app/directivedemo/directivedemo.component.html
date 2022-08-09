@@ -1,0 +1,67 @@
+<div>
+    <h1>HIiii </h1>
+</div>
+
+
+<div *ngIf="xyz">
+    <h1>hello </h1>
+</div>
+
+
+<div>
+
+    Fruit : <input type="text" name="fruit" #fruit>
+    <input type="submit" value="ADD Fruit " (click)="addfriuit(fruit.value)">
+
+    <ul *ngFor="let myfriut of friuts">
+        <li *ngIf="myfriut=='Apple'">{{myfriut}}</li>
+    </ul>
+</div>
+
+
+
+
+lang  : <input type="text" name="num" #num>
+<input type="submit" value="ADD Fruit " (click)="mydecnum(num.value)">
+
+<ul [ngSwitch]="mydec"> 
+
+    <li *ngSwitchCase="1" >EMglish</li>
+    <li *ngSwitchCase="2" >,marati</li>
+    <li *ngSwitchCase="3" >telgiu</li>
+    
+    
+    <li *ngSwitchCase="4" >malayam </li>
+    <li *ngSwitchDefault >Hindi  </li>
+    
+</ul>
+<hr>
+
+
+<div [ngClass]="{border: false, background: true}">
+    This directive allows us to render different elements 
+    This directive allows us to render different elements 
+    This directive allows us to render different elements 
+</div>
+
+
+<div [ngClass]="{border: true, background: true}">
+    This directive allows us to render different elements 
+    This directive allows us to render different elements 
+    This directive allows us to render different elements 
+</div>
+
+<div [ngClass]="{border: true, background: false}">
+    This directive allows us to render different elements 
+    This directive allows us to render different elements 
+    This directive allows us to render different elements 
+</div>
+
+<hr>
+
+<ul>
+    <li *ngFor="let item of friendslist">
+      {{ item.name }} {{ item.age }}
+    </li>
+  </ul>
+

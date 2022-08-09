@@ -1,0 +1,10 @@
+div{
+    width: 30%;
+   height: 200px;
+}
+.border{
+    border: 5px solid red;
+}
+.background{
+    background-color: pink;
+}

@@ -21,6 +21,7 @@ import { DevComponent } from './dept/dev/dev.component';
 import { HRComponent } from './dept/hr/hr.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
+import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { FormsModule } from '@angular/forms';
     TestingComponent,
     DevComponent,
     HRComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    DirectivedemoComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { DeptComponent } from './dept/dept.component';
 import { TestingComponent } from './dept/testing/testing.component';
+import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
 import { EnrtypageComponent } from './enrtypage/enrtypage.component';
 import { ErrorcompComponent } from './errorcomp/errorcomp.component';
 import { HomeComponent } from './home/home.component';
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path:'databind',
     component:DatabindingComponent
+  },
+  {
+    path:'dirdemo',
+    component:DirectivedemoComponent
   },
   {
     path:'',
