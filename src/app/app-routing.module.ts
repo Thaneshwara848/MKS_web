@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DeptComponent } from './dept/dept.component';
+import { TestingComponent } from './dept/testing/testing.component';
+import { EnrtypageComponent } from './enrtypage/enrtypage.component';
+import { ErrorcompComponent } from './errorcomp/errorcomp.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -16,7 +20,24 @@ const routes: Routes = [
   {
     path:'login',
     component:LoginComponent
+  },
+  {
+    path:'dept',
+    component:DeptComponent,
+    children: [{
+      path:'test',component:TestingComponent
+    }  ]
+  },
+  {
+    path:'',
+    component:EnrtypageComponent
+  },
+  {
+    path:"**",
+    redirectTo: 'home'
   }
+ 
+ 
 ];
 
 @NgModule({

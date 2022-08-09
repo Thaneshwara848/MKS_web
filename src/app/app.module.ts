@@ -13,6 +13,12 @@ import { GoldComponent } from './loan/gold/gold.component';
 import { XYZComponent } from './loan/xyz/xyz.component';
 import { GalaryComponent } from './galary/galary.component';
 import { ABCComponent } from './abc/abc.component';
+import { ErrorcompComponent } from './errorcomp/errorcomp.component';
+import { EnrtypageComponent } from './enrtypage/enrtypage.component';
+import { DeptComponent } from './dept/dept.component';
+import { TestingComponent } from './dept/testing/testing.component';
+import { DevComponent } from './dept/dev/dev.component';
+import { HRComponent } from './dept/hr/hr.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,13 @@ import { ABCComponent } from './abc/abc.component';
     GoldComponent,
     XYZComponent,
     GalaryComponent,
-    ABCComponent
+    ABCComponent,
+    ErrorcompComponent,
+    EnrtypageComponent,
+    DeptComponent,
+    TestingComponent,
+    DevComponent,
+    HRComponent
   ],
   imports: [
     BrowserModule,
