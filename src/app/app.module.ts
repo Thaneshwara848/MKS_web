@@ -19,6 +19,8 @@ import { DeptComponent } from './dept/dept.component';
 import { TestingComponent } from './dept/testing/testing.component';
 import { DevComponent } from './dept/dev/dev.component';
 import { HRComponent } from './dept/hr/hr.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,11 +40,13 @@ import { HRComponent } from './dept/hr/hr.component';
     DeptComponent,
     TestingComponent,
     DevComponent,
-    HRComponent
+    HRComponent,
+    DatabindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

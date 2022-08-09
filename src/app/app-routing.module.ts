@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DatabindingComponent } from './databinding/databinding.component';
 import { DeptComponent } from './dept/dept.component';
 import { TestingComponent } from './dept/testing/testing.component';
 import { EnrtypageComponent } from './enrtypage/enrtypage.component';
@@ -27,6 +28,10 @@ const routes: Routes = [
     children: [{
       path:'test',component:TestingComponent
     }  ]
+  },
+  {
+    path:'databind',
+    component:DatabindingComponent
   },
   {
     path:'',
