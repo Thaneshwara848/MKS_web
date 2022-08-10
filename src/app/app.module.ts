@@ -28,6 +28,10 @@ import { A1Component } from './a1/a1.component';
 import { B1Component } from './b1/b1.component';
 import { C1Component } from './c1/c1.component';
 import { D1Component } from './d1/d1.component';
+import { SeethaComponent } from './seetha/seetha.component';
+import { RamaComponent } from './rama/rama.component';
+import { RavanaComponent } from './ravana/ravana.component';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +59,10 @@ import { D1Component } from './d1/d1.component';
     A1Component,
     B1Component,
     C1Component,
-    D1Component
+    D1Component,
+    SeethaComponent,
+    RamaComponent,
+    RavanaComponent
   ],
   imports: [
     BrowserModule,

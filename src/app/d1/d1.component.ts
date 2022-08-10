@@ -14,6 +14,6 @@ export class D1Component implements OnInit {
   }
 
   dblogic(){
-   this.d.dbcommonLogic();
+   //this.d.dbcommonLogic();
   }
 }

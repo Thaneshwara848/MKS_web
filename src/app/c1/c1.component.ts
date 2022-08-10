@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommServService } from '../comm-serv.service';
 
 @Component({
   selector: 'app-c1',
@@ -7,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class C1Component implements OnInit {
 
-  constructor() { }
+  constructor(private dbs:CommServService) { }
 
   ngOnInit(): void {
   }
-
+  name =""
   dblogic(){
-    console.log("100 lines of code fr C class ")
+   this.name =this.dbs.myname;
   }
 }

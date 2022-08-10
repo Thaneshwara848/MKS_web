@@ -1,4 +1,4 @@
 <div>
-    A :<input type="text">
-    <input type="submit" (click)="dblogic()">
+    A :<input type="text" name="username" #username>
+    <input type="submit" (click)="dblogic(username.value)">
 </div>

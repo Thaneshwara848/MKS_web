@@ -13,7 +13,8 @@ export class B1Component implements OnInit {
   ngOnInit(): void {
   }
 
+  name="";
   dblogic(){
-   this.db.dbcommonLogic();
+    this.name=this.db.myname;
   }
 }

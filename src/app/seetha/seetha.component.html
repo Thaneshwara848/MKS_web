@@ -1,0 +1,7 @@
+Seetha :<input type="text" name="mymsg" #mymsg> 
+<input type="submit" value="Send" (click)="send(mymsg.value)">
+
+<p *ngFor="let msg of msgs">
+    {{msg}}
+
+</p>

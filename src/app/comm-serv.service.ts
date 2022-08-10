@@ -6,8 +6,10 @@ import { Injectable } from '@angular/core';
 export class CommServService {
 
   constructor() { }
-  dbcommonLogic()
+  myname="";
+  dbcommonLogic(name:any)
   {
-    console.log("Db common Logic with 100 lines of code from servioces  ")
+    console.log("My Name is : "+name)
+    this.myname=name
   }
 }

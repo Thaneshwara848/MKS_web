@@ -13,7 +13,7 @@ export class A1Component implements OnInit {
   ngOnInit(): void {
   }
 
-  dblogic(){
-    this.dbc.dbcommonLogic();
+  dblogic(username:any){
+    this.dbc.dbcommonLogic(username);
   }
 }
