@@ -22,6 +22,12 @@ import { HRComponent } from './dept/hr/hr.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
+import { SqrPipe } from './sqr.pipe';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
+import { A1Component } from './a1/a1.component';
+import { B1Component } from './b1/b1.component';
+import { C1Component } from './c1/c1.component';
+import { D1Component } from './d1/d1.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +49,13 @@ import { DirectivedemoComponent } from './directivedemo/directivedemo.component'
     DevComponent,
     HRComponent,
     DatabindingComponent,
-    DirectivedemoComponent
+    DirectivedemoComponent,
+    SqrPipe,
+    PipedemoComponent,
+    A1Component,
+    B1Component,
+    C1Component,
+    D1Component
   ],
   imports: [
     BrowserModule,

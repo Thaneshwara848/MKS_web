@@ -8,12 +8,16 @@ import { EnrtypageComponent } from './enrtypage/enrtypage.component';
 import { ErrorcompComponent } from './errorcomp/errorcomp.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
     path:'home',
     component:HomeComponent
+  },
+  {
+    path:'pipe',component:PipedemoComponent
   },
   {
     path:"signup",
