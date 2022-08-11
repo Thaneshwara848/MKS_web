@@ -13,6 +13,7 @@ import { GoldComponent } from './loan/gold/gold.component';
 import { XYZComponent } from './loan/xyz/xyz.component';
 import { GalaryComponent } from './galary/galary.component';
 import { ABCComponent } from './abc/abc.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorcompComponent } from './errorcomp/errorcomp.component';
 import { EnrtypageComponent } from './enrtypage/enrtypage.component';
 import { DeptComponent } from './dept/dept.component';
@@ -20,7 +21,7 @@ import { TestingComponent } from './dept/testing/testing.component';
 import { DevComponent } from './dept/dev/dev.component';
 import { HRComponent } from './dept/hr/hr.component';
 import { DatabindingComponent } from './databinding/databinding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule  } from '@angular/forms';
 import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
 import { SqrPipe } from './sqr.pipe';
 import { PipedemoComponent } from './pipedemo/pipedemo.component';
@@ -31,6 +32,8 @@ import { D1Component } from './d1/d1.component';
 import { SeethaComponent } from './seetha/seetha.component';
 import { RamaComponent } from './rama/rama.component';
 import { RavanaComponent } from './ravana/ravana.component';
+import { FormsdemoComponent } from './formsdemo/formsdemo.component';
+import { ReactivedrivenformComponent } from './reactivedrivenform/reactivedrivenform.component';
 
 
 @NgModule({
@@ -62,12 +65,15 @@ import { RavanaComponent } from './ravana/ravana.component';
     D1Component,
     SeethaComponent,
     RamaComponent,
-    RavanaComponent
+    RavanaComponent,
+    FormsdemoComponent,
+    ReactivedrivenformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

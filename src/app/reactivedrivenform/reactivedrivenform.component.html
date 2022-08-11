@@ -1,0 +1,22 @@
+<div class="abc">
+    <h1> Hi Reactive Demo </h1>
+    
+    <form [formGroup]="student" (ngSubmit)="myuserDisplay(student.value)">
+        First name : <input type="text" name="first" formControlName="firstname"><br>
+        last name :<input type="text" name="last" formControlName="lastname"><br>
+        Age :<input type="number"  name="age" formControlName="age"><br>
+        TEchnlogies:
+        <select formControlName="course">
+            <option value="java"> JAVA </option>
+            <option value="c"> C </option>
+            <option value="python">Python</option>
+            <option value="angular"> ANGUALR </option>
+            <option value="node"> NODE </option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type="submit" name="register" value="REGISTER" [disabled]="student.invalid">
+    </form>
+</div>

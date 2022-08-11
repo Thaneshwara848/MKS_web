@@ -1,0 +1,36 @@
+<div style="text-align: center">
+    <form>
+       
+        <form  #userForm="ngForm" (ngSubmit)="myuser(userForm.value)">
+           
+            <div class="form-inline">
+              <label for="email">Email address 
+
+              <span *ngIf="username.untouched && username.invalid" style="color: red">* : </span>
+              </label>
+        <input type="text" class="form-control" id="email" required ngModel name="username" #username="ngModel" ><br>
+
+              <span *ngIf="username.touched && username.invalid" style="color: red"> name is Requried ...1</span>
+              <span *ngIf="username.touched && username.valid" style="color: green"> name is valid  ...1</span>
+            </div>
+
+
+            <div class="form-inline">
+              <label for="pwd">Password:</label>
+          <input type="text" class="form-control" id="pwd" required ngModel name="userpass" #userpass="ngModel"><br>
+           <span *ngIf="userpass.touched && userpass.invalid" style="color: red"> passowrd  is Requried ...1</span>
+
+              <span *ngIf="userpass.touched && userpass.valid" style="color: green"> pass is valid  ...1</span>
+            </div>
+            
+            <button type="submit" class="btn btn-default" >Submit</button>
+          </form>
+
+    </form>
+</div>
+
+<hr>
+
+<div style="text-align:center">
+  <app-reactivedrivenform></app-reactivedrivenform>
+</div>

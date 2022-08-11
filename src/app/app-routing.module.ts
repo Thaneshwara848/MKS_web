@@ -6,13 +6,17 @@ import { TestingComponent } from './dept/testing/testing.component';
 import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
 import { EnrtypageComponent } from './enrtypage/enrtypage.component';
 import { ErrorcompComponent } from './errorcomp/errorcomp.component';
+import { FormsdemoComponent } from './formsdemo/formsdemo.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PipedemoComponent } from './pipedemo/pipedemo.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  {
+{
+  path:'forms',component:FormsdemoComponent
+}
+  ,{
     path:'home',
     component:HomeComponent
   },
