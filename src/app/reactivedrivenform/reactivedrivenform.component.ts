@@ -19,7 +19,6 @@ export class ReactivedrivenformComponent implements OnInit {
             Validators.minLength(3),
             Validators.maxLength(10),
             Validators.pattern('[a-zA-Z ]*$'),
-            Validators.email
 
           
         ]

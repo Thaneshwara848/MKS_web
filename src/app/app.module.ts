@@ -34,6 +34,9 @@ import { RamaComponent } from './rama/rama.component';
 import { RavanaComponent } from './ravana/ravana.component';
 import { FormsdemoComponent } from './formsdemo/formsdemo.component';
 import { ReactivedrivenformComponent } from './reactivedrivenform/reactivedrivenform.component';
+import { Lch1Component } from './lch1/lch1.component';
+import { Lch2Component } from './lch2/lch2.component';
+import { LifecycledemoComponent } from './lifecycledemo/lifecycledemo.component';
 
 
 @NgModule({
@@ -67,7 +70,10 @@ import { ReactivedrivenformComponent } from './reactivedrivenform/reactivedriven
     RamaComponent,
     RavanaComponent,
     FormsdemoComponent,
-    ReactivedrivenformComponent
+    ReactivedrivenformComponent,
+    Lch1Component,
+    Lch2Component,
+    LifecycledemoComponent
   ],
   imports: [
     BrowserModule,

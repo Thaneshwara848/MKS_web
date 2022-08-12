@@ -8,12 +8,24 @@ import { EnrtypageComponent } from './enrtypage/enrtypage.component';
 import { ErrorcompComponent } from './errorcomp/errorcomp.component';
 import { FormsdemoComponent } from './formsdemo/formsdemo.component';
 import { HomeComponent } from './home/home.component';
+import { Lch1Component } from './lch1/lch1.component';
+import { Lch2Component } from './lch2/lch2.component';
+import { LifecycledemoComponent } from './lifecycledemo/lifecycledemo.component';
 import { LoginComponent } from './login/login.component';
 import { PipedemoComponent } from './pipedemo/pipedemo.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
 {
+  path:'lifecycle/lch1',component:Lch1Component
+},
+{
+  path:'lifecycle/lch2',component:Lch2Component
+}
+,{
+    path:'lifecycle',component:LifecycledemoComponent
+}
+,{
   path:'forms',component:FormsdemoComponent
 }
   ,{
